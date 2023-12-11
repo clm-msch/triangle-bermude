@@ -2,7 +2,15 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {}
+    extend: {
+      colors : {
+        primary : '#155FC4'
+      },
+      fontFamily: {
+        brand: ['fields', 'sans-serif'],
+        basic: ['Inter', 'sans-serif'],
+      },
+    }
   },
   plugins: []
 };
