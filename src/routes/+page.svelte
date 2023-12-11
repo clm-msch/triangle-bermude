@@ -4,6 +4,6 @@
 </script>
 
 
-<main class="container m-auto h-screen">
+<main class="container m-auto h-screen bg-red-500 w-full">
     <SearchBar />
 </main>

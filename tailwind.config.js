@@ -7,8 +7,8 @@ export default {
         primary : '#155FC4'
       },
       fontFamily: {
-        brand: ['fields', 'sans-serif'],
-        basic: ['Inter', 'sans-serif'],
+        brand: ['fields'],
+        basic: ['Inter'],
       },
     }
   },
