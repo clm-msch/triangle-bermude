@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors : {
-        primary : '#155FC4'
+        primary : '#155FC4',
+        titleCard : '#2B2B2B'
       }
     }
   },
