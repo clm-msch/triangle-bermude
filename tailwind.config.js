@@ -2,7 +2,16 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {}
+    extend: {
+      colors : {
+        primary : '#155FC4',
+        titleCard : '#2B2B2B'
+      },
+      fontFamily: {
+        brand: ['fields'],
+        basic: ['Inter'],
+      },
+    }
   },
   plugins: []
 };
