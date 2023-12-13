@@ -1,14 +1,16 @@
 <script lang="ts">
-import '../rooms/room.css'
-import Gallery from '../../components/Gallery/Gallery.svelte';
-import DataActivities from '../../components/DataActivites/DataActivities.svelte';
-import SocialData from '../../components/SocialData/SocialData.svelte'
-import LocationCard from '../../components/LocationCard/LocationCard.svelte';
+import '../[slug]/room.css'
+import Gallery from '../../../components/Gallery/Gallery.svelte';
+import DataActivities from '../../../components/DataActivites/DataActivities.svelte';
+import SocialData from '../../../components/SocialData/SocialData.svelte'
+import LocationCard from '../../../components/LocationCard/LocationCard.svelte';
+
+export let data;
 </script>
 
 <main class="container m-auto ">
     <div class="flex justify-between mt-6 items-center mb-2">
-        <h1 class="text-4xl font-brand ">Arc de Triomphe</h1>
+        <h1 class="text-4xl font-brand ">{data.title}</h1>
         <h3 class="underline text-base">Architecture</h3>
     </div>
     <hr>
@@ -16,13 +18,13 @@ import LocationCard from '../../components/LocationCard/LocationCard.svelte';
     <section class="grid grid-cols-3 gap-4">
         <section class='flex flex-col mt-6 col-span-2'>
             <h2 class="text-2xl mb-3 font-brand">A propos</h2>
-            <p class="text-base font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio mollitia repudiandae quis quos omnis a, itaque voluptate ab labore blanditiis natus vitae eaque est recusandae. A nobis tempora veniam architecto?</p>
+            <p class="text-base font-light">{data.content}</p>
             
     <DataActivities price="Gratuit" access="Tout le monde" date="12 Décembre 2023"/>
     <hr>
     <SocialData phone="00000000" mail="test@test.gmail" facebook="Fabien" twitter="Fabien"/>
         </section>
-        <div class=" bg-primary h-40 mt-6 rounded-lg bg-opacity-30">
+        <div class="shadow-md h-40 mt-6 rounded-lg ">
     <LocationCard />
         </div>
     </section>
