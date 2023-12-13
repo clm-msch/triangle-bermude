@@ -1,10 +1,9 @@
 <script>
     import '../app.css'
-    import CarousselCard from '../components/CarousselCard/CarousselCard.svelte';
-    import LitlleCard from '../components/LitlleCard/LitlleCard.svelte';
-    import SearchBar from '../components/SearchBar/SearchBar.svelte'
+    import Header from '../layout/Header/Header.svelte'
 </script>
+<title>Unic Paris</title>
 
-<main class="container m-auto h-screen">
+<main>
+    <Header />
 </main>
-
