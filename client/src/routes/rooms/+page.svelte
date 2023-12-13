@@ -26,6 +26,4 @@ import LocationCard from '../../components/LocationCard/LocationCard.svelte';
     <LocationCard />
         </div>
     </section>
-   
-
 </main>

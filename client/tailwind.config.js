@@ -11,6 +11,9 @@ export default {
         brand: ['fields'],
         basic: ['Inter'],
       },
+      backgroundImage: {
+        'header': "url('./src/assets/bg-home-paris.jpg')",
+      }
     }
   },
   plugins: []
