@@ -6,10 +6,11 @@ export let facebook:string
 export let twitter:string
 </script>
 
-<ul class="mt-6">
-    <li class="flex py-2"><Phone class="mr-3 text-titleCard"/> : <span  class=" pl-2">{phone}</span></li>
-    <li class="flex py-2"><Mail class="mr-3 text-titleCard"/> : <a href="mailto:{mail}" class="text-primary underline pl-2">{mail}</a> </li>
-    <li class="flex py-2"><Facebook class="mr-3 text-titleCard"/> : <a href="{facebook}" class="text-primary underline pl-2"> {facebook}</a></li>
-    <li class="flex py-2"><Twitter class="mr-3 text-titleCard"/> : <a href="{twitter}" class="text-primary underline pl-2"> {twitter}</a></li>
+<ul class=" flex justify-between">
+    
+    <li class="flex py-2"> <a href="mailto:{mail}" ><Mail class="mr-3 text-titleCard"/> </a> </li>
+    <li class="flex py-2">  <a href="{facebook}" > <Facebook class="mr-3 text-titleCard"/></a></li>
+    <li class="flex py-2"> <a href="{twitter}" ><Twitter class="mr-3 text-titleCard"/>  </a></li>
+    <li class="flex py-2"> <a href="{phone}" ><Phone class="mr-3 text-titleCard"/>  </a></li>
    
 </ul>
