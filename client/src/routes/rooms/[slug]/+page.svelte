@@ -70,14 +70,14 @@ fetchDataAccess(access_id)
 <main class="container m-auto ">
     
     <div class="flex justify-between mt-6 items-center mb-2">
-        <a href="/" class="bg-newprimary p-2 rounded-lg">Revenir à l'accueil</a>
+        <a href="/" class="bg-primary-300 p-2 rounded-lg">Revenir à l'accueil</a>
     </div>
    
 
     <section class="mt-28">
         <div class="flex flex-col md:w-2/3 mobile:w-full">
             <h1 class="md:text-8xl mobile:text-4xl  z-40">{data.title} </h1>
-            <span class=" w-full h-4 bg-newprimary relative bottom-6 mobile:bottom-4"></span>
+            <span class=" w-full h-4 bg-primary-300 relative bottom-6 mobile:bottom-4"></span>
         </div>
        
         <section class="flex md:flex-row mobile:flex-col-reverse md:items-start mobile:justify-start  z-40">
