@@ -4,8 +4,17 @@ export default {
   theme: {
     extend: {
       colors : {
-        primary : '#155FC4',
-        newprimary : '#99E1D9',
+        primary : {
+          50: '#f5fcfb',
+          75: '#d5f3ef',
+          100: '#c4eee9',
+          200: '#aae6df',
+          300: '#99e1d9', //primary
+          400: '#6b9e98',
+          500: '#5d8984',
+        },
+        secondary : '#393424',
+        // newprimary : '#99E1D9',
         titleCard : '#2B2B2B'
       },
       fontFamily: {
@@ -13,8 +22,7 @@ export default {
         basic: ['Inter'],
       },
       backgroundImage: {
-        // 'header': "url('./src/assets/bg-home-paris.jpg')",
-        'header': "url('./static/bg-home-paris.jpg')",
+        'header': "url('https://res.cloudinary.com/diurvm1bd/image/upload/v1702559220/image_10_iwcucx.jpg')",
       },width:{
         zoomPicture : "500px"
       },
