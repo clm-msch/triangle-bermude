@@ -26,7 +26,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@splidejs/svelte-splide": "^0.2.9",
 		"lucide-svelte": "^0.294.0",
 		"svelte-maplibre": "^0.7.3"
 	}
