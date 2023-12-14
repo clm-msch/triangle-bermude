@@ -13,7 +13,8 @@ export default {
         basic: ['Inter'],
       },
       backgroundImage: {
-        'header': "url('./src/assets/bg-home-paris.jpg')",
+        // 'header': "url('./src/assets/bg-home-paris.jpg')",
+        'header': "url('./static/bg-home-paris.jpg')",
       },width:{
         zoomPicture : "500px"
       },
