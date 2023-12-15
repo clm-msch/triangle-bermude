@@ -2,6 +2,7 @@
 import '../[slug]/room.css'
 import { onMount } from 'svelte';
 import Map from '../../../components/Map/Map.svelte';
+import { ChevronLeft  } from 'lucide-svelte';
 import DataActivities from '../../../components/DataActivites/DataActivities.svelte';
 import SocialData from '../../../components/SocialData/SocialData.svelte'
 export let data;
@@ -67,16 +68,16 @@ fetchDataAccess(access_id)
 
 </script>
 
-<main class="lg:container lg:px-20 m-auto ">
+<main class="lg:container px-4 lg:px-20 m-auto ">
     
     <div class="flex justify-between mt-6 items-center mb-2">
-        <a href="/" class="bg-primary-300 p-2 rounded-lg">Revenir à l'accueil</a>
+       <div class="flex items-center justify-center"><ChevronLeft class="text-secondary"/><a href="/" class="text-secondary underline font-bold ">Revenir à l'accueil</a></div> 
     </div>
    
 
     <section class="mt-28">
         <div class="flex flex-col md:w-3/4 mobile:w-full">
-            <h1 class="md:text-8xl mobile:text-4xl  z-40">{data.title} </h1>
+            <h1 class="md:text-8xl mobile:text-4xl text-secondary  z-40">{data.title} </h1>
             <span class=" w-full h-4 bg-primary-300 relative bottom-6 mobile:bottom-4"></span>
         </div>
        
@@ -92,6 +93,6 @@ fetchDataAccess(access_id)
             </div>
             <div class="md:ml-10"><img src="{data.cover_url}" alt="{data.cover_alt}" class="md:w-zoomPicture md:rounded-full md:h-zoomPicture object-cover md:relative md:bottom-40 -z-10 mobile:w-full"></div>
         </section>
-       
+
     </section>
 </main>

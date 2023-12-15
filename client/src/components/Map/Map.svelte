@@ -9,14 +9,13 @@
   const API_BASE_URL: string = "https://shuhado.alwaysdata.net/django/api/v1/";
 
   async function fetchAdress(adress_id: number) {
-    console.log(adress_id);
     try {
       const resp = await fetch(API_BASE_URL + "adresse/" + adress_id + "/");
       const data: any = await resp.json();
       
       lat = data.latitude
       lng = data.longitude
-     console.log(data)
+      
       return data;
     } catch (error) {
       console.log(error);
@@ -24,6 +23,7 @@
   }
   onMount(async() => {
     adresseData = await fetchAdress(adresse_id);
+    console.log(adresseData)
   });
 </script>
 
@@ -42,4 +42,5 @@
       <MapPin color="#155FC4" />
     </Marker>
   </MapLibre>
+  <p class="mb-2">Adresse : {adresseData.address_name}</p>
 </div>
