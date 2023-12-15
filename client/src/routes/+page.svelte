@@ -22,13 +22,11 @@
   
         const resp = await fetch(apiUrl);
         const data = await resp.json();
-  if(wordData){
-      console.log(data)
-  }
+ 
         // Assurez-vous de traiter correctement les résultats en fonction de la présence du terme de recherche
-        datas = wordData ? data.results : data;
+        datas = data.results;
   
-       
+       console.log(datas)
         return datas;
       } catch (error) {
         console.log(error);
@@ -76,8 +74,9 @@
           <CardActivities />
         </div>
       {:else}
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
         {#each datas as data}
-        {data.results.title}
+        
           <LitlleCard
             picture={data.cover_url}
             name={data.title}
@@ -86,6 +85,8 @@
             id={data.id}
           />
         {/each}
+      </div>
+        
       {/if}
   
       <!-- <BigCard picture="https://cdn.paris.fr/qfapv4/2023/10/23/huge-efc64f2a6bd0674e013a2a946ce6f8cd.jpg" name="Pétanque square Emile Chautemps" /> -->
