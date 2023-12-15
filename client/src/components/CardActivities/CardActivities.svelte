@@ -37,7 +37,7 @@
     return datas
       .filter((activity) => new Date(activity.date_end) > currentDate)
       .sort((a, b) => Number(new Date(a.date_end)) - Number(new Date(b.date_end)))
-      .slice(0, 12);
+      .slice(0, 6);
   }
 
   function nextPage() {

@@ -51,7 +51,6 @@
   
   // Utilisez afterUpdate pour gérer les mises à jour après chaque rendu
   afterUpdate(() => {
-    console.log('Data updated');
   });
   </script>
   
