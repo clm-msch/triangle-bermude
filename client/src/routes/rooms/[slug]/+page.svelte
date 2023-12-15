@@ -67,7 +67,7 @@ fetchDataAccess(access_id)
 
 </script>
 
-<main class="container px-20 m-auto ">
+<main class="lg:container lg:px-20 m-auto ">
     
     <div class="flex justify-between mt-6 items-center mb-2">
         <a href="/" class="bg-primary-300 p-2 rounded-lg">Revenir à l'accueil</a>

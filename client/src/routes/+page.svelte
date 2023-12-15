@@ -52,8 +52,8 @@ function handleSearch(event:any){
                 <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Les Différentes facons de découvrir Paris</h2>
            <p class="my-2">Découvrir des lieux uniques sur Paris</p>
             </div>
+                <CardActivities /> 
             
-            <CardActivities />
         </div>
         <!-- <BigCard picture="https://cdn.paris.fr/qfapv4/2023/10/23/huge-efc64f2a6bd0674e013a2a946ce6f8cd.jpg" name="Pétanque square Emile Chautemps" /> -->
         <!-- <CarouselCard /> -->

@@ -43,14 +43,14 @@
   }
 </script>
 
-<section class="flex flex-wrap">
-  {#each datas as data}
-    <LitlleCard picture="{data.cover_url}" name="{data.title}" description="{data.lead_text}" price="{data.price_id}" id="{data.id}" />
-  {/each}
-
-  <div class="pagination flex w-full items-center justify-center">
-    <button on:click="{prevPage}" disabled="{page === 1}" class="text-center bg-primary-300 p-2 rounded-md">Previous</button>
-    <span class="mx-2 text-lg text-primary-500">{page}</span>
-    <button on:click="{nextPage}" disabled="{(page - 1) * pageSize + datas.length >= totalResults}" class="text-center bg-primary-300 p-2 rounded-md">Next</button>
-  </div>
+<section class="grid grid-cols-2 sm:grid-cols-3">
+    {#each datas as data}
+        <LitlleCard picture="{data.cover_url}" name="{data.title}" description="{data.lead_text}" price="{data.price_id}" id="{data.id}"/>
+    {/each}
+    <div class="pagination flex w-full items-center justify-center">
+      <button on:click="{prevPage}" disabled="{page === 1}" class="text-center bg-primary-300 p-2 rounded-md">Previous</button>
+      <span class="mx-2 text-lg text-primary-500">{page}</span>
+      <button on:click="{nextPage}" disabled="{(page - 1) * pageSize + datas.length >= totalResults}" class="text-center bg-primary-300 p-2 rounded-md">Next</button>
+    </div>
+  
 </section>
