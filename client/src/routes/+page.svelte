@@ -8,6 +8,7 @@
     import LittleCard from '../components/LitlleCard/LitlleCard.svelte'
     import CardActivities from '../components/CardActivities/CardActivities.svelte';
     let datas = []
+    let wordData:string=''
     const api = 'https://shuhado.alwaysdata.net/django/api/v1/event/'
 
     async function fetchData(){
@@ -26,20 +27,25 @@
         onMount(async ()=>{
         fetchData()
     })
-
+function handleSearch(event:any){
+    wordData = event.detail;
+    console.log(wordData)
+}
    
 </script>
 <title>Unic Paris</title>
 
 <main>
+    
     <div class="m-2 sm:m-6 flex flex-col gap-6 sm:gap-12">
         <!-- <div class="p-6">
             {#each datas as data}
             <LittleCard picture='{data.cover_url}' name='{data.title}' description='{data.cover_url}' price='{data.cover_url}' on:click={() => handleId(123)} />
             {/each}
         </div> -->
-        <Header />
+        <Header on:word="{handleSearch}"/>
         <div class="flex flex-col gap-2 sm:gap-6">
+            {wordData}
             <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Les Nouveautés</h2>
             <CarouselBigCard />
             <div class="flex flex-col mt-6">
