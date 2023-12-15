@@ -9,27 +9,33 @@ Introducing Unic Paris, a cutting-edge web application built using Svelte Kit th
 Gestion du projet avec Git sur GitHub
 
 **Client:** 
-SvelteKit avec Vite
+SvelteKit avec Vite 
+
 TailwindCSS
+
 Déploiement avec Vercel
 
 **Server:** 
 Django
+
 Creation d'une API
+
 Base de données MySQL
+
 Déploiement de l'api et de la base de données sur AlwaysData
+
 
 
 ## To-Do
 
-** Client: **
+**Client:**
 - Création des composants ✅
 - Creation du layout des pages ✅
 - Faire le routing des pages ✅
 - Connecter le front avec l'API ✅
 - Déployer le Front sur Vercel ✅
 
-** Server: **
+**Server:**
 - Création de l'API ✅
 - Création des modèles de la base de données ✅
 - Création des routes de l'API ✅
