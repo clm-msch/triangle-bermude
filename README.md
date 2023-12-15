@@ -9,6 +9,7 @@ Introducing Unic Paris, a cutting-edge web application built using Svelte Kit th
 Gestion du projet avec Git sur GitHub
 
 **Client:** 
+
 SvelteKit avec Vite 
 
 TailwindCSS
@@ -16,6 +17,7 @@ TailwindCSS
 Déploiement avec Vercel
 
 **Server:** 
+
 Django
 
 Creation d'une API
