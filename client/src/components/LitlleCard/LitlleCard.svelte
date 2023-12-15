@@ -20,7 +20,7 @@ onMount(()=>{
 })
 </script>
 
-<div class="w-1/3 mx-2" >
+<div class="w-1/5 p-2" >
 <figure >
     <img src="{picture}" alt="{name}" class="h-96 object-cover rounded-lg my-3.5">
     <figcaption>

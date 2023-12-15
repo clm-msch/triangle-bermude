@@ -25,9 +25,9 @@ import { onMount } from 'svelte';
   });
 </script>
 
-<section class="flex">
+<section class="flex flex-wrap">
     {#each datas as data}
-        <LitlleCard picture="{data.cover_url}" name="{data.title}" description="{data.lead_text}" price="Gratuit"/>
+        <LitlleCard picture="{data.cover_url}" name="{data.title}" description="{data.lead_text}" price="{data.price_id}"/>
     {/each}
    
   
