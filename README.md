@@ -21,6 +21,9 @@ Tailwind CSS, c'est bien plus qu'un simple framework CSS, c'est une approche pra
 - Déploiement avec Vercel :
   Le processus de déploiement sur Vercel est transparent et automatisé, avec des mises à jour en temps réel dès que vous poussez du code vers votre référentiel Git. De plus, Vercel offre des fonctionnalités telles que le pré-rendu automatique, la mise en cache intelligente et la gestion des environnements, garantissant une expérience utilisateur optimale.
 
+- Lucide :
+  Simple et efficace pour la mise en place des icones
+
 **Server:** 
 
 - Django
