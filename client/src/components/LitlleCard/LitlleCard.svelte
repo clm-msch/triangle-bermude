@@ -5,7 +5,8 @@ export let id:number
 export let picture:string
 export let name:string
 export let description:string
-export let price:string
+export let price:number
+let price_name:string
 let idActivity:number;
 function calculateLenght(){
     const maxLength = 67;
@@ -17,14 +18,14 @@ function calculateLenght(){
 const API_BASE_URL:string = "https://shuhado.alwaysdata.net/django/api/v1/"
 
 
-async function fetchDataPrice(price_id:string){
+async function fetchDataPrice(price_id:number){
     
     try{
         const resp = await fetch(API_BASE_URL+'price_type/'+price_id+'/')
         const data = await resp.json()
         
-        price = data.name 
-        return price
+        price_name = data.name 
+        return price_name
     }catch(error){
         console.log(error)
     }
@@ -46,7 +47,7 @@ onMount(async()=>{
     <figcaption>
         <h3 class="text-lg text-titleCard font-semibold ">{name}</h3>
         <p class="font-light">{@html description}</p>
-        <span class="text-titleCard"><strong>{price}</strong></span>
+        <span class="text-titleCard"><strong>{price_name}</strong></span>
     </figcaption>
 </figure>
 </div>
