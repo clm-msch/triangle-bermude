@@ -13,7 +13,6 @@ import { onMount } from 'svelte';
       const resp = await fetch(api);
       const data = await resp.json();
       datas = data.results;
-      console.log(datas)
       return datas;
     } catch (error) {
       console.log(error);
@@ -27,7 +26,7 @@ import { onMount } from 'svelte';
 
 <section class="flex flex-wrap">
     {#each datas as data}
-        <LitlleCard picture="{data.cover_url}" name="{data.title}" description="{data.lead_text}" price="{data.price_id}"/>
+        <LitlleCard picture="{data.cover_url}" name="{data.title}" description="{data.lead_text}" price="{data.price_id}" id="{data.id}"/>
     {/each}
    
   
