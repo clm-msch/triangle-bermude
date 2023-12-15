@@ -20,14 +20,10 @@
     await fetchData();
   });
 
-  function handleId(id:any){
-    console.log(id)
-}
 </script>
 
-  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
   {#each datas.slice(0, 6) as data (data.id)}
-    <BigCard picture="{data.cover_url}" name="{data.title}" />
+    <BigCard picture="{data.cover_url}" name="{data.title}" id="{data.id}" />
   {/each}
 </div>
-
