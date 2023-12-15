@@ -69,7 +69,9 @@
           </div>
           <CardActivities />
         </div>
+        <Footer />
       {:else}
+      <h2 class="font-semibold font-brand text-lg text-secondary">Resultats pour : <span class="text-primary-400 font-bold">{wordData}</span></h2>
         {#if dataFound}
           <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {#each datas as data}
@@ -88,7 +90,7 @@
         {/if}
       {/if}
   
-      <Footer />
+      
     </div>
   </main>
   
