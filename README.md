@@ -2,7 +2,7 @@
 ![Logo](https://res.cloudinary.com/diurvm1bd/image/upload/v1702619141/unic-paris-logo-banner_msgi5m.png)
 # Unic Paris
 
-Introducing Unic Paris, a cutting-edge web application built using Svelte Kit that seamlessly integrates with the open data API provided by the city of Paris. This innovative project aims to empower users by offering a comprehensive platform to explore and discover a plethora of activities within the enchanting city of Paris.
+Introducing Unic Paris, a cutting-edge web application built using Svelte Kit for Frontend and Django for Backend that seamlessly integrates with the open data API provided by the city of Paris. This innovative project aims to empower users by offering a comprehensive platform to explore and discover a plethora of activities within the enchanting city of Paris.
 
 
 ## Tech Stack
