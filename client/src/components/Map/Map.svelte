@@ -15,6 +15,7 @@
       
       lat = data.latitude
       lng = data.longitude
+      
       return data;
     } catch (error) {
       console.log(error);
@@ -22,6 +23,7 @@
   }
   onMount(async() => {
     adresseData = await fetchAdress(adresse_id);
+    console.log(adresseData)
   });
 </script>
 
@@ -40,4 +42,5 @@
       <MapPin color="#155FC4" />
     </Marker>
   </MapLibre>
+  <p class="mb-2">Adresse : {adresseData.address_name}</p>
 </div>
