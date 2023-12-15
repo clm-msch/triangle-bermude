@@ -62,7 +62,6 @@ Tailwind CSS, c'est bien plus qu'un simple framework CSS, c'est une approche pra
 
 ## Commentaires
 
-(avis, difficultés, ce qu'on aurait voulus faire)
 - Fabien :
   Avis : projet sympathique à faire, juste pas compréhensible d'utiliser une api pour faire une autre api
   Difficultés  : en front il n'y avait pas de difficultés en particulier, juste peut être trouver une map qui fonctionne avec sveltekit et typescript
@@ -73,4 +72,8 @@ Tailwind CSS, c'est bien plus qu'un simple framework CSS, c'est une approche pra
   Difficultés : Les 2 principales difficultés rencontrées ont été premièrement, la découverte de Django qui a été un petit peu longue mais très instructive et un vrai challenge et deuxièmement, le réarrangement des données qui a été long et compliqué.
   J'aurai juste aimé pouvoir faire en sorte de pouvoir récupérer tous les événements qui possèdent 1 ou plusieurs tags spécifié(s) dans la requête.
 
+- Clément :
+Avis : un bon défi surtout d'un point de vue temps, mais plutôt bonne organisation et répartition des tâches entre nous. Petite perte de temps sur l'UI, mais bon process sur le front-end avec Svelte qui nous a permis de très vite créer les composants.
+Difficultés : malheureusement, Svelte s'est montré assez capricieux dans sa compatibilité avec les library de map et de carousel, ce qui a rendu le développement assez fastidieux.
+J'aurais aimé permettre un filtrage beaucoup plus poussé avec chaque détails, ainsi qu'une page d'accueil plus poussée.
 > by @scotty974 @ShuHado @clm-msch
