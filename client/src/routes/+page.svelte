@@ -6,7 +6,9 @@
     import CarouselBigCard from '../components/CarouselBigCard/CarouselBigCard.svelte';
     import Footer from '../layout/Footer/Footer.svelte'
     import LittleCard from '../components/LitlleCard/LitlleCard.svelte'
+    import CardActivities from '../components/CardActivities/CardActivities.svelte';
     let datas = []
+    let wordData:string=''
     const api = 'https://shuhado.alwaysdata.net/django/api/v1/event/'
 
     async function fetchData(){
@@ -15,6 +17,7 @@
         const resp = await fetch(api)
         const data:any = await resp.json()
         datas = data
+        console.log(datas)
         return data
 
     }catch(error){
@@ -24,24 +27,33 @@
         onMount(async ()=>{
         fetchData()
     })
-
-    function handleId(id:any){
-    console.log("hey")
+function handleSearch(event:any){
+    wordData = event.detail;
+    console.log(wordData)
 }
+   
 </script>
 <title>Unic Paris</title>
 
 <main>
+    
     <div class="m-2 sm:m-6 flex flex-col gap-6 sm:gap-12">
         <!-- <div class="p-6">
             {#each datas as data}
             <LittleCard picture='{data.cover_url}' name='{data.title}' description='{data.cover_url}' price='{data.cover_url}' on:click={() => handleId(123)} />
             {/each}
         </div> -->
-        <Header />
+        <Header on:word="{handleSearch}"/>
         <div class="flex flex-col gap-2 sm:gap-6">
+            {wordData}
             <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Les Nouveautés</h2>
             <CarouselBigCard />
+            <div class="flex flex-col mt-6">
+                <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Les Différentes facons de découvrir Paris</h2>
+           <p class="my-2">Découvrir des lieux uniques sur Paris</p>
+            </div>
+                <CardActivities /> 
+            
         </div>
         <!-- <BigCard picture="https://cdn.paris.fr/qfapv4/2023/10/23/huge-efc64f2a6bd0674e013a2a946ce6f8cd.jpg" name="Pétanque square Emile Chautemps" /> -->
         <!-- <CarouselCard /> -->
