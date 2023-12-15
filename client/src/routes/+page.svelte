@@ -6,6 +6,7 @@
     import CarouselBigCard from '../components/CarouselBigCard/CarouselBigCard.svelte';
     import Footer from '../layout/Footer/Footer.svelte'
     import LittleCard from '../components/LitlleCard/LitlleCard.svelte'
+    import CardActivities from '../components/CardActivities/CardActivities.svelte';
     let datas = []
     const api = 'https://shuhado.alwaysdata.net/django/api/v1/event/'
 
@@ -42,6 +43,12 @@
         <div class="flex flex-col gap-2 sm:gap-6">
             <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Les Nouveautés</h2>
             <CarouselBigCard />
+            <div class="flex flex-col my-6">
+                <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Les Différentes facons de découvrir Paris</h2>
+           <p class="my-2">Découvrir des lieux uniques sur Paris</p>
+            </div>
+            
+            <CardActivities />
         </div>
         <!-- <BigCard picture="https://cdn.paris.fr/qfapv4/2023/10/23/huge-efc64f2a6bd0674e013a2a946ce6f8cd.jpg" name="Pétanque square Emile Chautemps" /> -->
         <!-- <CarouselCard /> -->

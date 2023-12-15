@@ -10,8 +10,8 @@
     try {
       const resp = await fetch(api);
       const data: any = await resp.json();
-      datas = data;
-      return data;
+      datas = data.results;
+      return datas;
     } catch (error) {
       console.log(error);
     }
