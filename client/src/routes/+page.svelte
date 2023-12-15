@@ -50,7 +50,7 @@ function handleSearch(event:any){
             <CarouselBigCard />
             <div class="flex flex-col mt-6">
                 <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Dernière Chance</h2>
-           <p class="my-2">Profitez de ces activités avant qu'elle ne s'arrête</p>
+           <p class="font-basic font-light">Profitez de ces activités avant qu'elle ne s'arrête.</p>
             </div>
                 <CardActivities /> 
             

@@ -92,6 +92,6 @@ fetchDataAccess(access_id)
             </div>
             <div class="md:ml-10"><img src="{data.cover_url}" alt="{data.cover_alt}" class="md:w-zoomPicture md:rounded-full md:h-zoomPicture object-cover md:relative md:bottom-40 -z-10 mobile:w-full"></div>
         </section>
-       
+                
     </section>
 </main>
