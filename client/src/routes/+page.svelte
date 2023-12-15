@@ -49,8 +49,8 @@ function handleSearch(event:any){
             <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Les Nouveautés</h2>
             <CarouselBigCard />
             <div class="flex flex-col mt-6">
-                <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Les Différentes facons de découvrir Paris</h2>
-           <p class="my-2">Découvrir des lieux uniques sur Paris</p>
+                <h2 class="font-brand font-semibold text-2xl sm:text-3xl text-secondary">Dernière Chance</h2>
+           <p class="my-2">Profitez de ces activités avant qu'elle ne s'arrête</p>
             </div>
                 <CardActivities /> 
             
