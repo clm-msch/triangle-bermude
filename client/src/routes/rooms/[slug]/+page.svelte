@@ -84,7 +84,7 @@ fetchDataAccess(access_id)
             <div class="flex md:flex-row mobile:flex-col-reverse md:justify-between md:items-start mt-8 ">
                 <div class="flex flex-col justify-between">
                     <DataActivities price="{price}" access="{access}" date="Début : {formattedDate} - Fin : {formattedDateEnd}"/>
-                    <Map lng="{2.36093301435977}" lat="{48.8540040044365}"/>
+                    <Map lng="{2.36093301435977}" lat="{48.8540040044365}" adresse_id="{data.adress_id}"/>
                     <SocialData phone="{data.contact_phone}"  mail="{data.contact_mail}" facebook="{data.contact_url}" twitter="{data.contact_twitter}"/>
                 </div>
                

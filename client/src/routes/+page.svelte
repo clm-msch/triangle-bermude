@@ -16,6 +16,7 @@
         const resp = await fetch(api)
         const data:any = await resp.json()
         datas = data
+        console.log(datas)
         return data
 
     }catch(error){
@@ -26,9 +27,7 @@
         fetchData()
     })
 
-    function handleId(id:any){
-    console.log("hey")
-}
+   
 </script>
 <title>Unic Paris</title>
 
