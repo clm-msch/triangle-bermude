@@ -10,21 +10,21 @@ Gestion du projet avec Git sur GitHub
 
 **Client:** 
 
-SvelteKit avec Vite 
+- SvelteKit avec Vite 
 
-TailwindCSS
+- TailwindCSS
 
-Déploiement avec Vercel
+- Déploiement avec Vercel
 
 **Server:** 
 
-Django
+- Django
 
-Creation d'une API
+- Creation d'une API
 
-Base de données MySQL
+- Base de données MySQL
 
-Déploiement de l'api et de la base de données sur AlwaysData
+- Déploiement de l'api et de la base de données sur AlwaysData
 
 
 
