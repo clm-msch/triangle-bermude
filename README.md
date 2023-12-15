@@ -26,13 +26,16 @@ Tailwind CSS, c'est bien plus qu'un simple framework CSS, c'est une approche pra
 
 **Server:** 
 
-- Django
+- Django:
+  L'utilisation de Django et de Django Rest Framework (DRF) est justifiée par leur efficacité et leur robustesse dans le développement web, particulièrement dans la création d'applications basées sur une architecture RESTful. Django, en tant que framework de développement web en Python, offre une structure de projet bien définie, facilitant la gestion des bases de données, la gestion des utilisateurs, et la création d'interfaces administratives. Il favorise également la réutilisation du code et la rapidité de développement grâce à son principe de "convention plutôt que configuration". En intégrant DRF, le processus de création d'une API REST devient encore plus fluide. DRF offre des outils puissants pour la sérialisation des données, la gestion des autorisations, la gestion des vues basées sur les classes, et d'autres fonctionnalités qui simplifient le développement d'API RESTful de manière cohérente et sécurisée. Ainsi, l'utilisation conjointe de Django et DRF constitue une solution robuste pour le développement d'applications web modernes, offrant à la fois une structure solide côté serveur et une API RESTful flexible et bien documentée.
 
 - Creation d'une API
 
-- Base de données MySQL
+- Base de données MySQL :
+  Le recours à MySQL comme système de gestion de base de données est justifié par sa réputation d'efficacité, de fiabilité et de polyvalence. En tant que base de données relationnelle open-source, MySQL est largement utilisé dans l'industrie pour son excellente performance, sa gestion efficace des transactions, et sa capacité à gérer des charges de travail importantes. Sa compatibilité avec un large éventail de langages de programmation et de plates-formes en fait un choix flexible pour les développeurs. De plus, MySQL offre des fonctionnalités avancées telles que la réplication, la montée en charge horizontale, et un ensemble complet d'outils d'administration. Son engagement envers les normes SQL assure une portabilité des données, facilitant l'intégration avec d'autres systèmes. En résumé, MySQL constitue un choix judicieux en raison de ses performances solides, de sa flexibilité, et de son adoption généralisée dans l'industrie, faisant de lui un moteur de base de données fiable pour une variété d'applications.
 
-- Déploiement de l'api et de la base de données sur AlwaysData
+- Déploiement avec AlwaysData :
+  Le choix d'Alwaysdata pour l'hébergement repose sur plusieurs facteurs qui en font une solution attrayante et fiable. Tout d'abord, Alwaysdata propose une plateforme d'hébergement web qui se distingue par sa simplicité d'utilisation, avec une interface conviviale qui simplifie la gestion des serveurs et des applications. Son modèle de tarification flexible permet de s'adapter aux besoins spécifiques, offrant des ressources évolutives selon les exigences du projet. La diversité des langages de programmation pris en charge, ainsi que la facilité d'intégration avec des outils de développement courants, font d'Alwaysdata un choix polyvalent pour les développeurs. De plus, la stabilité et la performance des serveurs, associées à un support réactif, renforcent la confiance dans la disponibilité continue des applications hébergées. Enfin, Alwaysdata accorde une importance particulière à la sécurité, en mettant en place des mécanismes de protection avancés, ce qui en fait une solution complète et fiable pour l'hébergement de projets web.
 
 
 
