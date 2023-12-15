@@ -41,7 +41,7 @@ onMount(async()=>{
 })
 </script>
 
-<div class="w-1/4 p-2 gap-1 hover:cursor-pointer transition ease-in-out delay-150 duration-300 hover:scale-90" on:click={handleId}>
+<div class="p-2 gap-1 hover:cursor-pointer transition ease-in-out delay-150 duration-300 hover:scale-90" on:click={handleId}>
 <figure >
     <img src="{picture}" alt="{name}" class="h-96 object-cover rounded-lg mb-3.5">
     <figcaption>
