@@ -6,7 +6,6 @@ export async function load({params}){
 	const resp = await fetch(API_URL+params.slug+'/')
 	const data = await resp.json()
 	console.log(data)
-	
 	return data
    }catch(error){
 	console.log(error)

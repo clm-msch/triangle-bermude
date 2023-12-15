@@ -1,6 +1,5 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  // import Carousel from 'svelte-carousel';
   import BigCard from '../BigCard/BigCard.svelte';
 
   let datas: any[] = [];
@@ -10,8 +9,8 @@
     try {
       const resp = await fetch(api);
       const data: any = await resp.json();
-      datas = data;
-      return data;
+      datas = data.results;
+      return datas;
     } catch (error) {
       console.log(error);
     }
@@ -21,22 +20,10 @@
     await fetchData();
   });
 
-  // let carousel: any;
-  // const handleNextClick = () => {
-  //   carousel.goToNext();
-  // };
 </script>
 
-<!-- <Carousel
-  bind:this={carousel}
-  let:loaded
-  autoplay
-  autoplayDuration={3000}
-  autoplayProgressVisible
-> -->
-  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
   {#each datas.slice(0, 6) as data (data.id)}
-    <BigCard picture="{data.cover_url}" name="{data.title}" />
+    <BigCard picture="{data.cover_url}" name="{data.title}" id="{data.id}" />
   {/each}
 </div>
-<!-- </Carousel> -->
