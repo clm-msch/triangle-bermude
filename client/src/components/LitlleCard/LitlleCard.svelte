@@ -39,14 +39,13 @@ onMount(async()=>{
     await fetchDataPrice(price)
 })
 </script>
-
-<div class="w-1/4 p-2 gap-1 hover:cursor-pointer transition ease-in-out delay-150 duration-300 hover:scale-90" on:click={handleId}>
-<figure >
-    <img src="{picture}" alt="{name}" class="h-96 object-cover rounded-lg mb-3.5">
-    <figcaption>
-        <h3 class="text-lg text-titleCard font-semibold ">{name}</h3>
-        <p class="font-light">{@html description}</p>
-        <span class="text-titleCard"><strong>{price}</strong></span>
-    </figcaption>
-</figure>
-</div>
+    <div class="p-2 gap-1 hover:cursor-pointer transition ease-in-out delay-150 duration-300 hover:scale-90" on:click={handleId}>
+    <figure >
+        <img src="{picture}" alt="{name}" class="h-96 object-cover rounded-lg mb-3.5">
+        <figcaption>
+            <h3 class="text-lg text-titleCard font-semibold ">{name}</h3>
+            <p class="font-light">{@html description}</p>
+            <span class="text-titleCard"><strong>{price}</strong></span>
+        </figcaption>
+    </figure>
+    </div>

@@ -40,4 +40,3 @@
       </figcaption>
     </figure>
   </div>
-  
