@@ -68,10 +68,10 @@ fetchDataAccess(access_id)
 
 </script>
 
-<main class="lg:container lg:px-20 m-auto ">
+<main class="lg:container px-4 lg:px-20 m-auto ">
     
     <div class="flex justify-between mt-6 items-center mb-2">
-       <div class="flex items-center"><ChevronLeft class="text-primary-400"/><a href="/" class="text-primary-400 underline font-bold ">Revenir à l'accueil</a></div> 
+       <div class="flex items-center"><ChevronLeft class="text-secondary"/><a href="/" class="text-secondary underline font-bold ">Revenir à l'accueil</a></div> 
     </div>
    
 
@@ -93,6 +93,6 @@ fetchDataAccess(access_id)
             </div>
             <div class="md:ml-10"><img src="{data.cover_url}" alt="{data.cover_alt}" class="md:w-zoomPicture md:rounded-full md:h-zoomPicture object-cover md:relative md:bottom-40 -z-10 mobile:w-full"></div>
         </section>
-                
+
     </section>
 </main>
