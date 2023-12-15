@@ -32,7 +32,6 @@ async function fetchDataPrice(price_id:number){
 }
 function handleId() {
       goto(`/rooms/${id}`);
-      console.log(id)
     }
     
 onMount(async()=>{

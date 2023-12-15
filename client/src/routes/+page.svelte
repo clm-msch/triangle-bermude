@@ -23,7 +23,6 @@
         const resp = await fetch(apiUrl);
         const data = await resp.json();
   if(wordData){
-      console.log(data)
   }
         // Assurez-vous de traiter correctement les résultats en fonction de la présence du terme de recherche
         datas = wordData ? data.results : data;
@@ -47,7 +46,6 @@
   
   // Utilisez afterUpdate pour gérer les mises à jour après chaque rendu
   afterUpdate(() => {
-    console.log('Data updated');
   });
   </script>
   
