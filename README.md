@@ -68,5 +68,9 @@ Tailwind CSS, c'est bien plus qu'un simple framework CSS, c'est une approche pra
   Difficultés  : en front il n'y avait pas de difficultés en particulier, juste peut être trouver une map qui fonctionne avec sveltekit et typescript
   J'aurais aimé pouvoir faire un système de compte ou les gens peuvent liker des destinations par exemple
 
+- Cyril :
+  Avis : Projet assez complexe du fait de la tête des données récupérées et du peu de temps qu'on possédait cependant quand même assez cool et challengeant.
+  Difficultés : Les 2 principales difficultés rencontrées ont été premièrement, la découverte de Django qui a été un petit peu longue mais très instructive et un vrai challenge et deuxièmement, le réarrangement des données qui a été long et compliqué.
+  J'aurai juste aimé pouvoir faire en sorte de pouvoir récupérer tous les événements qui possèdent 1 ou plusieurs tags spécifié(s) dans la requête.
 
 > by @scotty974 @ShuHado @clm-msch
