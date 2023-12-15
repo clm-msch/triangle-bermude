@@ -2,6 +2,7 @@
 import '../[slug]/room.css'
 import { onMount } from 'svelte';
 import Map from '../../../components/Map/Map.svelte';
+import { ChevronLeft  } from 'lucide-svelte';
 import DataActivities from '../../../components/DataActivites/DataActivities.svelte';
 import SocialData from '../../../components/SocialData/SocialData.svelte'
 export let data;
@@ -70,7 +71,7 @@ fetchDataAccess(access_id)
 <main class="lg:container lg:px-20 m-auto ">
     
     <div class="flex justify-between mt-6 items-center mb-2">
-        <a href="/" class="bg-primary-300 p-2 rounded-lg">Revenir à l'accueil</a>
+       <div class="flex items-center"><ChevronLeft class="text-primary-400"/><a href="/" class="text-primary-400 underline font-bold ">Revenir à l'accueil</a></div> 
     </div>
    
 
