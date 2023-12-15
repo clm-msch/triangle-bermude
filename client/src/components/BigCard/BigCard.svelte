@@ -23,18 +23,17 @@
     });
   
     function handleId() {
-      // Utilisez goto pour effectuer la redirection vers la page détaillée
       goto(`/rooms/${id}`);
     }
   </script>
   
-  <div class="bg-primary-50 rounded-lg shadow-md">
+  <div on:click={handleId} class="bg-primary-50 rounded-lg shadow-md">
     <figure>
       <img loading="lazy" src="{picture}" alt="{name}" class="rounded-t-lg">
       <figcaption class="py-4 px-2">
         <div class="flex justify-between items-center">
           <h3 class="text-base">{name}</h3>
-          <button class="bg-primary-300 hover:bg-primary-400 w-fit text-secondary rounded-lg p-3 text-sm font-semibold " on:click={handleId}>
+          <button class="bg-primary-300 hover:bg-primary-400 w-fit text-secondary rounded-lg p-3 text-sm font-semibold ">
             Découvrir
           </button>
         </div>
