@@ -2,6 +2,7 @@
     import { MapLibre,Marker } from 'svelte-maplibre';
     import { MapPin } from 'lucide-svelte';
 
+
     export let lng:number
     export let lat:number
     </script>

@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
-  import Carousel from 'svelte-carousel';
+  // import Carousel from 'svelte-carousel';
   import BigCard from '../BigCard/BigCard.svelte';
 
   let datas: any[] = [];
@@ -21,20 +21,22 @@
     await fetchData();
   });
 
-  let carousel: any; // Utilisez le type approprié pour votre version de svelte-carousel
-  const handleNextClick = () => {
-    carousel.goToNext();
-  };
+  // let carousel: any;
+  // const handleNextClick = () => {
+  //   carousel.goToNext();
+  // };
 </script>
 
-<Carousel
+<!-- <Carousel
   bind:this={carousel}
   let:loaded
   autoplay
   autoplayDuration={3000}
   autoplayProgressVisible
->
+> -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
   {#each datas.slice(0, 6) as data (data.id)}
     <BigCard picture="{data.cover_url}" name="{data.title}" />
   {/each}
-</Carousel>
+</div>
+<!-- </Carousel> -->
